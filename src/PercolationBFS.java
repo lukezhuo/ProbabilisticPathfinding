@@ -8,29 +8,30 @@ public class PercolationBFS extends PercolationDFSFast{
         int size = myGrid.length;
         Queue<Integer> q = new LinkedList<>();
         myGrid[row][col] = FULL;
-        q.add(row * size + col);
-        int dequeue = q.remove();
-        int dRow = dequeue / size;
-        int dCol = dequeue % size;
-        if(dCol > 0 && myGrid[row][col-1] != FULL && myGrid[row][col-1] == OPEN) {
-            //dfs(row, col -1);
-            myGrid[row][col-1] = FULL;
-            q.add(row * size + col - 1);
+        q.add(toQueue(row, col, size));
+        while(q.size()!=0) {
+            int dequeue = q.remove();
+            int dRow = dequeue / size;
+            int dCol = dequeue % size;
+            if (dCol > 0 && myGrid[dRow][dCol - 1] == OPEN) {
+                myGrid[row][col - 1] = FULL;
+                q.add(toQueue(dRow, dCol - 1, size));
+            }
+            if (dCol < myGrid[dRow].length - 1 && myGrid[dRow][dCol + 1] == OPEN) {
+                myGrid[dRow][dCol + 1] = FULL;
+                q.add(toQueue(dRow, dCol + 1, size));
+            }
+            if (dRow > 0 && myGrid[dRow - 1][dCol] == OPEN) {
+                myGrid[dRow - 1][dCol] = FULL;
+                q.add(toQueue(dRow - 1, dCol, size));
+            }
+            if (dRow < myGrid.length - 1 && myGrid[dRow + 1][dCol] == OPEN) {
+                myGrid[dRow + 1][dCol] = FULL;
+                q.add(toQueue(dRow + 1, dCol, size));
+            }
         }
-        if(dCol < myGrid[row].length - 1 && myGrid[row][col+1] != FULL && myGrid[row][col+1] == OPEN){
-            //dfs(row, col +1);
-            myGrid[row][col+1] = FULL;
-            q.add(row * size + col + 1);
-        }
-        if(dRow > 0 && myGrid[row-1][col] != FULL && myGrid[row-1][col] == OPEN){
-            //dfs(row-1, col);
-            myGrid[row-1][col] = FULL;
-            q.add((row-1) * size + col);
-        }
-        if(dRow < myGrid.length - 1 && myGrid[row+1][col] != FULL && myGrid[row+1][col] == OPEN){
-            //dfs(row+1, col);
-            myGrid[row+1][col] = FULL;
-            q.add((row+1) * size + col);
-        }
+    }
+    private int toQueue(int row, int col, int size){
+        return row * size + col;
     }
 }
