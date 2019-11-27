@@ -11,23 +11,28 @@ public class PercolationBFS extends PercolationDFSFast{
         q.add(toQueue(row, col, size));
         while(q.size()!=0) {
             int dequeue = q.remove();
-            int dRow = dequeue / size;
-            int dCol = dequeue % size;
-            if (dCol > 0 && myGrid[dRow][dCol - 1] == OPEN) {
-                myGrid[row][col - 1] = FULL;
-                q.add(toQueue(dRow, dCol - 1, size));
+            row = dequeue / size;
+            col = dequeue % size;
+
+            if (col > 0 && myGrid[row][col - 1] == OPEN) {
+                col = col - 1;
+                myGrid[row][col] = FULL;
+                q.add(toQueue(row, col, size));
             }
-            if (dCol < myGrid[dRow].length - 1 && myGrid[dRow][dCol + 1] == OPEN) {
-                myGrid[dRow][dCol + 1] = FULL;
-                q.add(toQueue(dRow, dCol + 1, size));
+            if (col < myGrid[row].length - 1 && myGrid[row][col + 1] == OPEN) {
+                col = col + 1;
+                myGrid[row][col] = FULL;
+                q.add(toQueue(row, col, size));
             }
-            if (dRow > 0 && myGrid[dRow - 1][dCol] == OPEN) {
-                myGrid[dRow - 1][dCol] = FULL;
-                q.add(toQueue(dRow - 1, dCol, size));
+            if (row > 0 && myGrid[row - 1][col] == OPEN) {
+                row = row - 1;
+                myGrid[row][col] = FULL;
+                q.add(toQueue(row, col, size));
             }
-            if (dRow < myGrid.length - 1 && myGrid[dRow + 1][dCol] == OPEN) {
-                myGrid[dRow + 1][dCol] = FULL;
-                q.add(toQueue(dRow + 1, dCol, size));
+            if (row < myGrid.length - 1 && myGrid[row + 1][col] == OPEN) {
+                row = row + 1;
+                myGrid[row][col] = FULL;
+                q.add(toQueue(row, col, size));
             }
         }
     }
