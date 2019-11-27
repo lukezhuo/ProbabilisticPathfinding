@@ -3,7 +3,7 @@ public class PercolationUF implements IPercolate {
     private boolean[][] myGrid;
     private final int VTOP;
     private final int VBOTTOM;
-    private int myOpenCount;
+    private int myOpenCount = 0;
     PercolationUF(IUnionFind finder, int size){
         myGrid = new boolean [size][size];
         finder.initialize(size * size + 2);
