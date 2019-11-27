@@ -7,13 +7,13 @@ public class PercolationBFS extends PercolationDFSFast{
     protected void dfs(int row, int col) {
         int size = myGrid.length;
         Queue<Integer> q = new LinkedList<>();
-        myGrid[row][col] = FULL;
+       // myGrid[row][col] = FULL;
         q.add(toQueue(row, col, size));
         while(q.size()!=0) {
             int dequeue = q.remove();
             row = dequeue / size;
             col = dequeue % size;
-
+            myGrid[row][col] = FULL;
             if (col > 0 && myGrid[row][col - 1] == OPEN) {
                 col = col - 1;
                 myGrid[row][col] = FULL;
