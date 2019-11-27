@@ -3,10 +3,9 @@ import org.junit.jupiter.api.*;
 
 public class TestDFSPercolation {
 	
-	public IPercolate getDFSPercolater(int size) {
-		return new PercolationDFS(size);
-	}
-	
+	//public IPercolate getDFSPercolater(int size) { return new PercolationDFS(size); }
+	//public IPercolate getDFSPercolater(int size) {return new PercolationDFSFast(size);}
+	public IPercolate getDFSPercolater(int size) {return new PercolationBFS(size);}
 	/**
 	 * test checks if PercolationDFS' isOpen method works correctly
 	 */
