@@ -53,7 +53,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.InteractivePercolationVisualizer">
+  <component name="RunManager" selected="JUnit.TestDFSPercolation">
     <configuration name="InteractivePercolationVisualizer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="InteractivePercolationVisualizer" />
       <module name="P6-Percolation-Fall19" />
@@ -81,9 +81,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TestDFSPercolation" />
         <item itemvalue="Application.InteractivePercolationVisualizer" />
         <item itemvalue="JUnit.TestUFPercolation" />
-        <item itemvalue="JUnit.TestDFSPercolation" />
       </list>
     </recent_temporary>
   </component>
