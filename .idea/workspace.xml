@@ -2,18 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="443d8463-54fa-4b33-b5f2-cea90ce28a85" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/PercolationBFS.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/PercolationDFSFast.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/PercolationUF.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/P6-Percolation-Fall19.iml" beforeDir="false" afterPath="$PROJECT_DIR$/P6-Percolation-Fall19.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/P6-Percolation-Fall19/InteractivePercolationVisualizer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/P6-Percolation-Fall19/InteractivePercolationVisualizer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/P6-Percolation-Fall19/TestDFSPercolation.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/P6-Percolation-Fall19/TestDFSPercolation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/P6-Percolation-Fall19/TestUFPercolation.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/P6-Percolation-Fall19/TestUFPercolation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/InteractivePercolationVisualizer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/InteractivePercolationVisualizer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TestDFSPercolation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TestDFSPercolation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TestUFPercolation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TestUFPercolation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/P6-Percolation-Fall19/PercolationUF.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/P6-Percolation-Fall19/PercolationUF.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PercolationUF.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PercolationUF.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
