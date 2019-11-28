@@ -1,8 +1,30 @@
 import java.util.*;
+/**
+ * Simulate percolation thresholds for a grid-base system using
+ * breadth-first, or level order, search techniques for determining if the top of
+ * a grid is connected to the bottom of a grid.
+ *
+ * @author Luke Zhuo
+ **/
 public class PercolationBFS extends PercolationDFSFast{
+    /**
+     * Initialize a grid so that all cells are blocked.
+     *
+     * @param n
+     *           is the size of the simulated (square) grid
+     */
     public PercolationBFS(int n) {
         super(n);
     }
+    /**
+     * Private helper method to mark all cells that are open and reachable from
+     * (row,col).
+     *
+     * @param row
+     *             is the row coordinate of the cell being checked/marked
+     * @param col
+     *             is the col coordinate of the cell being checked/marked
+     */
     @Override
     protected void dfs(int row, int col) {
         int size = myGrid.length;
@@ -27,7 +49,7 @@ public class PercolationBFS extends PercolationDFSFast{
 
         }
     }
-    
+
     private int toQueue(int row, int col ){
         return row * myGrid.length + col;
     }
