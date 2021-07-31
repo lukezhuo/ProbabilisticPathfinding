@@ -2,9 +2,6 @@
  *  Compilation:  javac WeightedQuickUnionPathCompressionUF.java
  *  Execution:  java WeightedQuickUnionPathCompressionUF < input.txt
  *  Dependencies: StdIn.java StdOut.java
- *  Data files:   http://algs4.cs.princeton.edu/15uf/tinyUF.txt
- *                http://algs4.cs.princeton.edu/15uf/mediumUF.txt
- *                http://algs4.cs.princeton.edu/15uf/largeUF.txt
  *
  *  Weighted quick-union with path compression.
  *
@@ -16,19 +13,6 @@
  *  It supports the <em>union</em> and <em>find</em> operations, along with
  *  methods for determining whether two sites are in the same component
  *  and the total number of components.
- *  <p>
- *  This implementation uses weighted quick union (by size) with full path compression.
- *  Initializing a data structure with <em>n</em> sites takes linear time.
- *  Afterwards, <em>union</em>, <em>find</em>, and <em>connected</em> take
- *  logarithmic time (in the worst case) and <em>count</em> takes constant
- *  time. Moreover, the amortized time per <em>union</em>, <em>find</em>,
- *  and <em>connected</em> operation has inverse Ackermann complexity.
- *  <p>
- *  For additional documentation, see <a href="http://algs4.cs.princeton.edu/15uf">Section 1.5</a> of
- *  <i>Algorithms, 4th Edition</i> by Robert Sedgewick and Kevin Wayne.
- *     
- *  @author Robert Sedgewick
- *  @author Kevin Wayne
  */
 public class QuickUWPC implements IUnionFind {
     private int[] parent;  // parent[i] = parent of i

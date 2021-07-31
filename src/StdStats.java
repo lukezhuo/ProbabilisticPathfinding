@@ -25,25 +25,10 @@
  *         min   1.000
  *        mean   3.000
  *         max   5.000
- *     std dev   1.581
- *
- *  Should these funtions use varargs instead of array arguments?
+ *     std dev   1.58
  *
  ******************************************************************************/
 
-/**
- *  The {@code StdStats} class provides static methods for computing
- *  statistics such as min, max, mean, sample standard deviation, and
- *  sample variance.
- *  <p>
- *  For additional documentation, see
- *  <a href="http://introcs.cs.princeton.edu/22library">Section 2.2</a> of
- *  <i>Computer Science: An Interdisciplinary Approach</i>
- *  by Robert Sedgewick and Kevin Wayne.
- *
- *  @author Robert Sedgewick
- *  @author Kevin Wayne
- */
 public final class StdStats {
 
     private StdStats() { }

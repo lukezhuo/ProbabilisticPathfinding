@@ -1,10 +1,5 @@
 /**
  * Interface supported by different implementations of UnionFind algorithms.
- * 
- * @author Kevin Wayne
- * @author Owen Astrachan
- * @author Jeff Forbes
- * @date March 2011
  */
 
 public interface IUnionFind {

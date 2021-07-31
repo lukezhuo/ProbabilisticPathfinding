@@ -4,12 +4,6 @@
  * with different approaches in analyzing not only what the Percolation
  * Threshold constants are for different grids, but how efficiently these
  * constants can be determined via simulation.
- * 
- * @author Owen Astrachan
- * @author Jeff Forbes
- * @date March, 2008
- * @date September, 2008
- * @date March, 2011
  */
 
 public interface IPercolate {
