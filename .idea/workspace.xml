@@ -3,10 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="443d8463-54fa-4b33-b5f2-cea90ce28a85" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/P6-Percolation-Fall19/META-INF/P6-Percolation-Fall19.kotlin_module" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/P6-Percolation-Fall19/PercolationBFS.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/P6-Percolation-Fall19/PercolationBFS.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PercolationBFS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PercolationBFS.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/P6-Percolation-Fall19/PercolationDFSFast.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/P6-Percolation-Fall19/PercolationDFSFast.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/P6-Percolation-Fall19/PercolationStats.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/P6-Percolation-Fall19/PercolationStats.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/P6-Percolation-Fall19/PercolationUF.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/P6-Percolation-Fall19/PercolationUF.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/PercolationDFSFast.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PercolationDFSFast.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PercolationUF.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PercolationUF.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PercolationStats.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PercolationStats.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -60,6 +63,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="PercolationStats" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="PercolationStats" />
+      <module name="P6-Percolation-Fall19" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TestDFSPercolation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="P6-Percolation-Fall19" />
       <option name="PACKAGE_NAME" value="" />
@@ -81,6 +91,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.InteractivePercolationVisualizer" />
+        <item itemvalue="Application.PercolationStats" />
         <item itemvalue="JUnit.TestDFSPercolation" />
         <item itemvalue="JUnit.TestUFPercolation" />
       </list>

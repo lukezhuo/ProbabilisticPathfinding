@@ -26,19 +26,28 @@ public class PercolationDFSFast extends PercolationDFS {
      */
     @Override
     protected void updateOnOpen(int row, int col) {
+        boolean yes = false;
         if(row == 0){
-            dfs(row, col);
+            yes = true;
+           // dfs(row, col);
         }
-        else if (col > 0 && myGrid[row][col-1] == FULL){
-            dfs(row, col);
+        if (col > 0 && myGrid[row][col-1] == FULL){
+            yes = true;
+            //dfs(row, col);
         }
-        else if(col < myGrid[row].length - 1 && myGrid[row][col+1] == FULL){
-            dfs(row, col);
+        if(col < myGrid[row].length - 1 && myGrid[row][col+1] == FULL){
+            yes = true;
+            //dfs(row, col);
         }
-        else if (row > 0 && myGrid[row-1][col] == FULL){
-            dfs(row, col);
+        if (row > 0 && myGrid[row-1][col] == FULL){
+            yes = true;
+            //dfs(row, col);
         }
-        else if(row < myGrid.length - 1 && myGrid[row+1][col] == FULL){
+        if(row < myGrid.length - 1 && myGrid[row+1][col] == FULL){
+            yes = true;
+            //dfs(row, col);
+        }
+        if(yes){
             dfs(row, col);
         }
     }
